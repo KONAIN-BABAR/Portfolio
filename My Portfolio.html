@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Konain Babar | Portfolio</title>
   <style>
+
     body {
       font-family: Arial, sans-serif;
       background-color: light gray;
@@ -11,18 +12,22 @@
       padding: 0;
       scroll-behavior: smooth;
     }
+
     header {
       background-color: #222;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
+
     h1{ 
       color:light-gray;
      }
+
      h2 {
       color: black;
     }
+
     section {
       background: white;
       margin: 20px auto;
@@ -31,32 +36,54 @@
       border-radius: 10px;
       box-shadow: none;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
     }
+
     td, th {
       border: 1px solid light gray;
       padding: 10px;
       text-align: center;
     }
+
     hr {
       margin: 30px 0;
       height: 2px;
       background: #ccc;
       border: none;
     }
+
     ul {
       margin-left: 20px;
     }
+
     a {
       color: Bright Blue;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+     .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow:none;
+    }
+
+    #projectImages {
+      display: none; 
   </style>
 </head>
 <body>
@@ -172,6 +199,51 @@
     <li>Cooking</li>
   </ul>
 </section>
+
+<section>
+  <h2>Semester Projects</h2>
+  <h3> Mess Management System</h3>
+  <p>
+    The Meal_Log table is used to keep track of which student received which meal on a specific date. It records details such as the student ID, the meal ID, the date the meal was served, and a confirmation (like a signature) that the student actually received the meal. This table acts like a digital signature book or attendance sheet for meals, helping management ensure that meals are distributed properly and are not misused or claimed multiple times.
+    On the other hand, the Audit_Log table is designed for tracking and security purposes. It records every significant change made to the database, such as inserting, updating, or deleting records. This includes information about which user performed the change, on which table, at what time, and which specific record was affected. The Audit_Log helps maintain transparency, accountability, and traceability within the system, making it easier to identify who made what change and when—especially important for sensitive or critical data
+    <a href="#" onclick="showGallery()">Click here</a> to view the project screenshots.
+  </p>
+
+  <div id="projectImages" class="gallery">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\flowchART.png" alt="Flow chart">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project1.png" alt="Project 1">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project2.png" alt="Project 2">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project3.png" alt="Project 3">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project4.png" alt="Project 4">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project5.png" alt="Project 5">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project6.png" alt="Project 6">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project7.png" alt="Project 7">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project8.png" alt="Project 8">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project9.png" alt="Project 9">
+    <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\project10.png" alt="Project 10">
+
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result1.png" alt="result 1">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result2.png" alt="result 2">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result3.png" alt="result 3">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result4.png" alt="result 4">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result5.png" alt="result 5">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result6.png" alt="result 6">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result7.png" alt="result 7">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result8.png" alt="result 8">
+     <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\result9.png" alt="result 9">
+
+      <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\Screenshots 1.png" alt="report 1">
+      <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\Screenshots 2.png" alt="report 2">
+      <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\screenshot3.png" alt="report 3">
+      <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\Screenshot4.png" alt="report 4">
+      <img src="C:\Users\shah\OneDrive\Pictures\Screenshots 1\Screenshot5.png" alt="report 5">
+  </div>
+</section>
+<script>
+  function showGallery() {
+    document.getElementById("projectImages").style.display = "grid";
+  }
+</script>
 
 </body>
 </html>
